@@ -7,18 +7,30 @@
 body {
   background-color: hsl(222deg, 26%, 31%);
   font-family: "League Spartan", sans-serif;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0 2px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 20px 20px;
 }
 
 nav {
   color: hsl(0deg, 0%, 100%);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+nav > div > p {
+  font-size: 32px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 7px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }/*# sourceMappingURL=style.css.map */
