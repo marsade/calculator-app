@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$medium: 762px;
+$large: 1280px;
+$exlarge: 1440px;
+
+// theme 1 colors
+//backgrounds
+$main-1-bg: hsl(222, 26%, 31%);
+$tog-key-bg-1: hsl(223, 31%, 20%);
+$scr-bg-1: hsl(224, 36%, 15%);
+
+//text
+$text-nav-1: hsl(0, 0%, 100%);
+$text-body-1: hsl(221, 14%, 31%);
+
+//keys
+
+// theme 2 colors
+$main-2-bg: hsl(0, 0%, 90%);
+$tog-key-bg-2: hsl(0, 5%, 81%);
+$scr-bg-2: hsl(0, 0%, 93%);

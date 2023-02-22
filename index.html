@@ -1,26 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="dist/css/style.css" />
+		<link rel="stylesheet" href="src/jtoggler.styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<title>Calculator app</title>
+	</head>
+	<body>
+		<nav>
+			<div>
+				<p>calc</p>
+			</div>
+			<div>
+				<div>
+					<p>THEME</p>
+				</div>
+				<div class="theme-toggle">
+					<div>
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
+					<div>
+						<input type="checkbox" class="jtoggler" data-jtmulti-state />
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="result"></div>
+		</main>
+		<article>
+			<div class="number-contain">
+				<div>7</div>
+				<div>8</div>
+				<div>9</div>
+				<div>DEL</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>+</div>
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>-</div>
+				<div>.</div>
+				<div>0</div>
+				<div>/</div>
+				<div>x</div>
+				<div>RESET</div>
+				<div>=</div>
+			</div>
+		</article>
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="src/jtoggler.js"></script>
+	</body>
 </html>
