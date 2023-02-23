@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: hsl(222deg, 26%, 31%);
   font-family: "League Spartan", sans-serif;
@@ -33,4 +39,37 @@ ul {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
+}
+.theme-toggle p {
+  padding-right: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+}
+
+main {
+  margin-top: 35px;
+}
+main .result {
+  background-color: hsl(224deg, 36%, 15%);
+  padding: 25px 20px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 32px;
+  text-align: right;
+  border-radius: 10px;
+}
+
+article {
+  margin-top: 20px;
+}
+article .number-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.num {
+  background-color: hsl(225deg, 21%, 49%);
+  padding: 10px 10px;
+  width: 40px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
