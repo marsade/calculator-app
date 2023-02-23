@@ -9,7 +9,7 @@ html {
 body {
 	background-color: $main-1-bg;
 	font-family: "League Spartan", sans-serif;
-	margin: 20px 20px;
+	margin: 20px 30px;
 }
 nav {
 	color: $text-nav-1;
@@ -46,7 +46,7 @@ ul {
 }
 main {
 	margin-top: 35px;
-	.result {
+	.answer {
 		background-color: $scr-bg-1;
 		padding: 25px 20px;
 		color: $text-nav-1;
@@ -55,20 +55,61 @@ main {
 		border-radius: 10px;
 	}
 }
-article {
+.container {
 	margin-top: 20px;
-	.number-container {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+	border-radius: 10px;
+	padding: 20px 20px;
+	background-color: $tog-key-bg-1;
+}
+.number-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+input {
+	justify-self: center;
+	font-family: inherit;
+	background-color: hsl(30, 25%, 89%);
+	border: none;
+	text-align: center;
+	padding: 16px;
+	width: 55px;
+	border-radius: 5px;
+	color: hsl(221, 14%, 31%);
+	cursor: pointer;
+	font-size: 23px;
+	margin-bottom: 10px;
+	box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
+	-webkit-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
+	-moz-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
+
+	&#del-btn {
+		padding: 15px 10px;
+		background-color: hsl(225, 21%, 49%);
+		color: hsl(0, 0%, 100%);
+		box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+		-webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+		-moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+	}
+	&#reset-btn {
+		width: 125px;
+		justify-self: center;
+		background-color: hsl(225, 21%, 49%);
+		color: hsl(0, 0%, 100%);
+		box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+		-webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+		-moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+	}
+	&#result-btn {
+		width: 125px;
+		background-color: hsl(6, 63%, 50%);
+		color: hsl(0, 0%, 100%);
+		box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
+		-webkit-box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
+		-moz-box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
 	}
 }
-.num {
-	background-color: $key-bg-1;
-	padding: 10px 10px;
-	width: 40px;
-	text-align: center;
+.last-row {
+	grid-column: 1/5;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
-
-// box-shadow: 2px 10px 6px 3px rgba(35,44,67,0.75);
-// -webkit-box-shadow: 2px 10px 6px 3px rgba(35,44,67,0.75);
-// -moz-box-shadow: 2px 10px 6px 3px rgba(35,44,67,0.75);

@@ -13,7 +13,7 @@ html {
 body {
   background-color: hsl(222deg, 26%, 31%);
   font-family: "League Spartan", sans-serif;
-  margin: 20px 20px;
+  margin: 20px 30px;
 }
 
 nav {
@@ -50,7 +50,7 @@ ul {
 main {
   margin-top: 35px;
 }
-main .result {
+main .answer {
   background-color: hsl(224deg, 36%, 15%);
   padding: 25px 20px;
   color: hsl(0deg, 0%, 100%);
@@ -59,17 +59,63 @@ main .result {
   border-radius: 10px;
 }
 
-article {
+.container {
   margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: hsl(223deg, 31%, 20%);
 }
-article .number-container {
+
+.number-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.num {
-  background-color: hsl(225deg, 21%, 49%);
-  padding: 10px 10px;
-  width: 40px;
+input {
+  justify-self: center;
+  font-family: inherit;
+  background-color: hsl(30deg, 25%, 89%);
+  border: none;
   text-align: center;
+  padding: 16px;
+  width: 55px;
+  border-radius: 5px;
+  color: hsl(221deg, 14%, 31%);
+  cursor: pointer;
+  font-size: 23px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
+}
+input#del-btn {
+  padding: 15px 10px;
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+}
+input#reset-btn {
+  width: 125px;
+  justify-self: center;
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+}
+input#result-btn {
+  width: 125px;
+  background-color: hsl(6deg, 63%, 50%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
+  -webkit-box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
+  -moz-box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
+}
+
+.last-row {
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=style.css.map */
