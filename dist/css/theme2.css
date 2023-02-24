@@ -88,7 +88,15 @@ input {
 	-webkit-box-shadow: 0px 3px 2px 0px hsl(35, 11%, 61%);
 	-moz-box-shadow: 0px 3px 2px 0px hsl(35, 11%, 61%);
 }
-input#del-btn {
+
+#del-btn {
+	font-family: inherit;
+	text-transform: uppercase;
+	border: none;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
 	padding: 15px 10px;
 	background-color: hsl(185, 42%, 37%);
 	color: hsl(0deg, 0%, 100%);
