@@ -16,6 +16,10 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+.theme2-body {
+  background-color: hsl(0deg, 0%, 90%);
+}
+
 nav {
   color: hsl(0deg, 0%, 100%);
   margin-top: 20px;
@@ -105,6 +109,7 @@ input#del-btn {
   justify-self: stretch;
   margin-top: 10px;
   border: none;
+  cursor: pointer;
   font-size: 20px;
   border-radius: 5px;
   background-color: hsl(225deg, 21%, 49%);
@@ -121,6 +126,7 @@ input#del-btn {
   background-color: hsl(6deg, 63%, 50%);
   color: hsl(0deg, 0%, 100%);
   border: none;
+  cursor: pointer;
   margin-top: 10px;
   font-size: 20px;
   border-radius: 5px;

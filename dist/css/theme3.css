@@ -1,5 +1,8 @@
-@import "./reset&vars";
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
 
 html {
 	display: flex;
@@ -7,26 +10,21 @@ html {
 	align-items: center;
 	box-sizing: border-box;
 }
+
 body {
-	background-color: $main-1-bg;
+	background-color: hsl(268, 75%, 9%);
 	font-family: "League Spartan", sans-serif;
-	// margin: 20px 30px;
 }
-.theme2-body {
-	background-color: hsl(0, 0%, 90%);
-}
+
 nav {
-	color: $text-nav-1;
+	color: hsl(52, 100%, 62%);
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	> div {
-		> p {
-			font-size: 32px;
-		}
-	}
+}
+nav > div > p {
+	font-size: 32px;
 }
 
 ul {
@@ -37,64 +35,69 @@ ul {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 .theme-toggle {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
-
-	p {
-		padding-right: 30px;
-		font-size: 13px;
-		letter-spacing: 2px;
-		margin-bottom: 3px;
-	}
 }
+.theme-toggle p {
+	padding-right: 30px;
+	font-size: 13px;
+	letter-spacing: 2px;
+	margin-bottom: 3px;
+}
+
 main {
 	margin-top: 35px;
-	.answer {
-		background-color: $scr-bg-1;
-		padding: 25px 20px;
-		color: $text-nav-1;
-		font-size: 32px;
-		text-align: right;
-		border-radius: 10px;
-	}
 }
+main .answer {
+	background-color: hsl(268, 71%, 12%);
+	padding: 25px 20px;
+	color: hsl(52, 100%, 62%);
+	font-size: 32px;
+	text-align: right;
+	border-radius: 10px;
+}
+
 .container {
 	margin-top: 30px;
 	border-radius: 10px;
 	padding: 30px 20px;
-	background-color: $tog-key-bg-1;
+	background-color: hsl(268, 71%, 12%);
 }
+
 .number-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 15px;
 }
+
 input {
 	font-family: inherit;
-	background-color: hsl(30, 25%, 89%);
+	background-color: hsl(268, 47%, 21%);
+
 	border: none;
 	text-align: center;
 	padding: 16px;
 	border-radius: 5px;
-	color: hsl(221, 14%, 31%);
+	color: hsl(52, 100%, 62%);
 	cursor: pointer;
 	font-size: 20px;
 	margin-bottom: 15px;
-	box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
-	-webkit-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
-	-moz-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
-
-	&#del-btn {
-		padding: 15px 10px;
-		background-color: hsl(225, 21%, 49%);
-		color: hsl(0, 0%, 100%);
-		box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
-		-webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
-		-moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
-	}
+	box-shadow: 0px 3px 2px 0px hsl(285, 91%, 52%);
+	-webkit-box-shadow: 0px 3px 2px 0px hsl(285, 91%, 52%);
+	-moz-box-shadow: 0px 3px 2px 0px hsl(285, 91%, 52%);
 }
+input#del-btn {
+	padding: 15px 10px;
+	background-color: hsl(281, 89%, 26%);
+	color: hsl(0deg, 0%, 100%);
+	box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
+	-webkit-box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
+	-moz-box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
+}
+
 #reset-btn {
 	padding: 15px 10px;
 	font-family: inherit;
@@ -103,46 +106,47 @@ input {
 	justify-self: stretch;
 	margin-top: 10px;
 	border: none;
-	cursor: pointer;
 	font-size: 20px;
 	border-radius: 5px;
-	background-color: hsl(225, 21%, 49%);
-	color: hsl(0, 0%, 100%);
-	box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
-	-webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
-	-moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
+	cursor: pointer;
+	background-color: hsl(281, 89%, 26%);
+	color: hsl(0deg, 0%, 100%);
+	box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
+	-webkit-box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
+	-moz-box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
 }
+
 #result-btn {
 	font-family: inherit;
 	text-transform: uppercase;
 	grid-column: 3/5;
-	background-color: hsl(6, 63%, 50%);
-	color: hsl(0, 0%, 100%);
+	background-color: hsl(176, 100%, 44%);
+	color: hsl(198, 20%, 13%);
 	border: none;
-	cursor: pointer;
 	margin-top: 10px;
 	font-size: 20px;
 	border-radius: 5px;
-	box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
-	-webkit-box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
-	-moz-box-shadow: 0px 3px 2px 0px rgba(147, 38, 26, 0.75);
+	cursor: pointer;
+	box-shadow: 0px 3px 2px 0px hsl(177, 92%, 70%);
+	-webkit-box-shadow: 0px 3px 2px 0px hsl(177, 92%, 70%);
+	-moz-box-shadow: 0px 3px 2px 0px hsl(177, 92%, 70%);
 }
+
 footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	color: #050505;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-
-	a {
-		text-decoration: none;
-		color: hsl(0, 0%, 100%);
-	}
 }
-@media screen and (min-width: $medium) {
+footer a {
+	text-decoration: none;
+	color: hsl(52, 100%, 62%);
+}
+
+@media screen and (min-width: 700px) {
 	html {
 		height: 100%;
 	}
@@ -164,10 +168,9 @@ footer {
 		font-size: 20px;
 		padding: 10px 5px;
 		border-radius: 10px;
-
-		&#del-btn {
-			padding: 10px 5px;
-		}
+	}
+	input#del-btn {
+		padding: 10px 5px;
 	}
 	#result-btn {
 		border-radius: 10px;
@@ -179,4 +182,4 @@ footer {
 		border-radius: 10px;
 		padding: 15px;
 	}
-}
+} /*# sourceMappingURL=style.css.map */
