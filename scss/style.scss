@@ -5,11 +5,12 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 }
 body {
 	background-color: $main-1-bg;
 	font-family: "League Spartan", sans-serif;
-	margin: 20px 30px;
+	// margin: 20px 30px;
 }
 nav {
 	color: $text-nav-1;
@@ -134,5 +135,43 @@ footer {
 	a {
 		text-decoration: none;
 		color: hsl(0, 0%, 100%);
+	}
+}
+@media screen and (min-width: $medium) {
+	html {
+		height: 100%;
+	}
+	body {
+		width: 500px;
+	}
+	main .answer {
+		padding: 35px 20px;
+		font-size: 32px;
+	}
+	.container {
+		padding: 30px;
+	}
+	.number-container {
+		column-gap: 15px;
+		row-gap: 5px;
+	}
+	input {
+		font-size: 20px;
+		padding: 10px 5px;
+		border-radius: 10px;
+
+		&#del-btn {
+			padding: 10px 5px;
+		}
+	}
+	#result-btn {
+		border-radius: 10px;
+		font-size: 20px;
+		padding: 15px;
+	}
+	#reset-btn {
+		font-size: 20px;
+		border-radius: 10px;
+		padding: 15px;
 	}
 }
