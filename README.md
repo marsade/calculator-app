@@ -44,6 +44,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- SCSS
 - [JQuery](https://jquery.com/)
 
 ### What I learned
