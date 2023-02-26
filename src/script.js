@@ -3,6 +3,8 @@ const result = $(".answer");
 const currentTheme = localStorage.getItem("theme");
 
 let endValue = "";
+
+//input button click
 $("input").click(function () {
 	let input = $(this).attr("value");
 
@@ -17,7 +19,7 @@ $("input").click(function () {
 	result.text(endValue);
 	console.log(endValue);
 });
-
+//delete button click
 $("#del-btn").click(function () {
 	endValue = endValue.substring(0, endValue.length - 1);
 	result.text(endValue);
@@ -25,7 +27,7 @@ $("#del-btn").click(function () {
 		result.text("0");
 	}
 });
-
+// result button click
 $("#result-btn").click(function () {
 	let calculatedValue = eval(endValue);
 	if (isNaN(calculatedValue)) {
@@ -49,9 +51,10 @@ $("#reset-btn").click(function () {
 	result.text("0");
 	endValue = "";
 });
+
+// function fo rkeyboard presses
 $(window).keypress(function (e) {
 	e.preventDefault();
-	//grabbing the liveScreen
 
 	//numbers
 	if (e.key === "0") {
@@ -145,7 +148,7 @@ $(window).keypress(function (e) {
 		}
 	}
 });
-
+// save current theme in localstorage
 $(document).on("jt:toggled:multi", function (event, target) {
 	if (target.checked === true && $(target).parent().index() === 1) {
 		$("#theme").attr("href", "dist/css/theme2.css");
