@@ -12,16 +12,16 @@ html {
 }
 
 body {
-  background-color: hsl(222deg, 26%, 31%);
+  background-color: hsl(222, 26%, 31%);
   font-family: "League Spartan", sans-serif;
 }
 
 .theme2-body {
-  background-color: hsl(0deg, 0%, 90%);
+  background-color: hsl(0, 0%, 90%);
 }
 
 nav {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -54,23 +54,27 @@ ul {
 
 main {
   margin-top: 35px;
+  overflow: hidden;
 }
 main .answer {
-  background-color: hsl(224deg, 36%, 15%);
+  background-color: hsl(224, 36%, 15%);
   padding: 25px 20px;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 32px;
   text-align: right;
   border-radius: 10px;
-  width: 255px;
+  width: 250px;
   overflow-x: scroll;
+}
+main .answer:-webkit-scrollbar {
+  display: none;
 }
 
 .container {
   margin-top: 30px;
   border-radius: 10px;
   padding: 30px 20px;
-  background-color: hsl(223deg, 31%, 20%);
+  background-color: hsl(223, 31%, 20%);
 }
 
 .number-container {
@@ -81,12 +85,12 @@ main .answer {
 
 input {
   font-family: inherit;
-  background-color: hsl(30deg, 25%, 89%);
+  background-color: hsl(30, 25%, 89%);
   border: none;
   text-align: center;
   padding: 16px;
   border-radius: 5px;
-  color: hsl(221deg, 14%, 31%);
+  color: hsl(221, 14%, 31%);
   cursor: pointer;
   font-size: 20px;
   margin-bottom: 15px;
@@ -94,18 +98,10 @@ input {
   -webkit-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
   -moz-box-shadow: 0px 3px 2px 0px rgba(180, 165, 151, 0.75);
 }
-
-#del-btn {
-  font-family: inherit;
-  text-transform: uppercase;
-  border: none;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
+input#del-btn {
   padding: 15px 10px;
-  background-color: hsl(225deg, 21%, 49%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
   box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
   -webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
   -moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
@@ -122,8 +118,8 @@ input {
   cursor: pointer;
   font-size: 20px;
   border-radius: 5px;
-  background-color: hsl(225deg, 21%, 49%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
   box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
   -webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
   -moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.75);
@@ -133,8 +129,8 @@ input {
   font-family: inherit;
   text-transform: uppercase;
   grid-column: 3/5;
-  background-color: hsl(6deg, 63%, 50%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
   border: none;
   cursor: pointer;
   margin-top: 10px;
@@ -157,7 +153,7 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 @media screen and (min-width: 700px) {
@@ -170,6 +166,8 @@ footer a {
   main .answer {
     padding: 35px 20px;
     font-size: 32px;
+    width: 460px;
+    overflow-x: scroll;
   }
   .container {
     padding: 30px;

@@ -89,20 +89,13 @@ input {
 	-webkit-box-shadow: 0px 3px 2px 0px hsl(285, 91%, 52%);
 	-moz-box-shadow: 0px 3px 2px 0px hsl(285, 91%, 52%);
 }
-#del-btn {
-	font-family: inherit;
-	text-transform: uppercase;
-	border: none;
-	margin-bottom: 15px;
-	border-radius: 5px;
-	font-size: 20px;
-	cursor: pointer;
+input#del-btn {
 	padding: 15px 10px;
-	background-color: hsl(281, 89%, 26%);
-	color: hsl(0deg, 0%, 100%);
-	box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
-	-webkit-box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
-	-moz-box-shadow: 0px 3px 2px 0px hsl(290, 70%, 36%);
+	background-color: hsl(225, 21%, 49%);
+	color: hsl(0, 0%, 100%);
+	box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
+	-webkit-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
+	-moz-box-shadow: 0px 3px 2px 0px rgba(99, 112, 151, 0.5);
 }
 
 #reset-btn {
@@ -163,6 +156,8 @@ footer a {
 	main .answer {
 		padding: 35px 20px;
 		font-size: 32px;
+		width: 460px;
+		overflow-x: scroll;
 	}
 	.container {
 		padding: 30px;
