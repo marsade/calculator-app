@@ -157,3 +157,5 @@
 $(function () {
 	$(".jtoggler").jtoggler();
 });
+// console.log(document.querySelector(".jtoggler-control"));
+console.log(document.querySelector("jtoggler-control"));
